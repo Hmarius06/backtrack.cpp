@@ -39,7 +39,7 @@ void backtrack()
         while(as && !ev);
         if(as)
             if(solutie(k))afisare(st,k);
-            else {k++; st[k]=0; nr++;}
+            else {k++; st[k]=st[k-1];}
         else k--;
     }
 }
@@ -48,8 +48,8 @@ int main()
     cout<<"n=";cin>>n;
     cout<<"p=";cin>>p;
     backtrack();
-    cout<<"permutari="<<nr<<endl;
 
 
 return 0;
 }
+
