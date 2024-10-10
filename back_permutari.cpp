@@ -38,8 +38,8 @@ void backtrack()
         }
         while(as && !ev);
         if(as)
-            if(solutie(k))afisare(st,k);
-            else {k++; st[k]=0; nr++;}
+            if(solutie(k)){nr++;afisare(st,k);}
+            else {k++; st[k]=0; }
         else k--;
     }
 }
