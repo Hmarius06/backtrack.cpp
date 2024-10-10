@@ -1,4 +1,3 @@
-//1. concus sportiv
 #include <iostream>
 #include <fstream>
 #include <string.h>
@@ -38,7 +37,7 @@ void afisare_initiala (c concurenti[], int n)
 void afisare_solutie()
 {
     cout << "Solutia "<<tot<<": "<<endl;
-    for (int i=1; i<m; i++)
+    for (int i=1; i<=m; i++)
         cout <<"concurentul "<< concurenti[sol[i]].nr << " (din tara " << concurenti[sol[i]].t<<")" << endl;
     cout << endl;
 }
